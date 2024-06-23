@@ -1,4 +1,34 @@
 import streamlit as st
+import smtplib
+from email.mime.text import MIMEText
+from dotenv import load_dotenv
+import os
+
+# Cargar variables de entorno desde el archivo .env
+load_dotenv()
+
+# Configuración del servidor SMTP
+smtp_server = os.getenv("SMTP_SERVER")
+smtp_port = os.getenv("SMTP_PORT")
+smtp_user = os.getenv("SMTP_USER")
+smtp_password = os.getenv("SMTP_PASSWORD")
+to_email = os.getenv("TO_EMAIL")
+
+def send_email(subject, message, to_email):
+    msg = MIMEText(message)
+    msg["Subject"] = subject
+    msg["From"] = smtp_user
+    msg["To"] = to_email
+
+    try:
+        with smtplib.SMTP(smtp_server, smtp_port) as server:
+            server.starttls()
+            server.login(smtp_user, smtp_password)
+            server.sendmail(smtp_user, to_email, msg.as_string())
+        return True
+    except Exception as e:
+        st.error(f"Error al enviar el correo: {e}")
+        return False
 
 st.title("Cupones 🎟️")
 
@@ -14,4 +44,10 @@ cupones = {
 for cupon, descripcion in cupones.items():
     st.subheader(cupon)
     st.write(descripcion)
-    st.button(f"Canjear {cupon}")
+    if st.button(f"Canjear {cupon}"):
+        subject = f"Cupón canjeado: {cupon}"
+        message = f"Tu hermana ha canjeado el cupón: {cupon}\nDescripción: {descripcion}"
+        if send_email(subject, message, to_email):
+            st.success(f"¡El cupón '{cupon}' ha sido canjeado! Te llegará una notificación por correo.")
+        else:
+            st.error(f"No se pudo canjear el cupón '{cupon}'. Intenta nuevamente.")

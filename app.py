@@ -57,17 +57,14 @@ st.title(f'¡Bienvenida, {nombre}, a tu página de cumpleaños! 🎉')
 st.write(f"""
 ¡Hola {nombre}!
 
-Este es un regalo especial para ti en tu cumpleaños. He creado esta página web para celebrar tu día de una manera única y especial. Aquí encontrarás diferentes secciones, cada una con una sorpresa diseñada especialmente para ti.
+Este es un regalo especial para ti en tu cumpleaños que hizo tu hermano nerd a no encontrar otra idea. He creado esta página web para celebrar tu día de una manera única y especial, dandole un toque mio jjeejeje. Aquí encontrarás diferentes secciones, cada una con una sorpresa diseñada especialmente para ti. Brevemente te describo cada una de ellas:
 
-- **Inicio**: Esta es la página de bienvenida donde puedes obtener una visión general de todo lo que te espera.
-- **Soul Mate**: Un rincón especial dedicado a nuestra relación y a todos los momentos increíbles que hemos compartido.
+- **Inicio**: Esta es la presente sección, es la página de bienvenida donde puedes obtener una visión general de todo lo que te espera.
+- **Soul Mate**: Un rincón especial dedicado a nuestra hermandad y a los momentos increíbles que hemos compartido.
 - **Cupones**: Una serie de cupones que puedes canjear por diferentes actividades y regalos a lo largo del año.
-- **Celia**: Una sección dedicada a la querida Celia.
+- **Celia**: Una sección dedicada a la querida Celia, tu gata que brilla como tu.
 
 Espero que disfrutes navegando por estas secciones y que cada una de ellas te haga sentir lo especial que eres para mí. ¡Feliz cumpleaños!
 """)
 
-
-st.write('- ¡Disfruta navegando por tus secciones especiales en esta página de cumpleaños!')
-st.write('- ¡Cada sección tiene una sorpresa para ti!')
 
