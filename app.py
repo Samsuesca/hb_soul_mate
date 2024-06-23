@@ -54,6 +54,8 @@ st.markdown(
 # Título de la página
 st.title(f'¡Bienvenida, {nombre}, a tu página de cumpleaños! 🎉')
 
+st.image("miquito.avif", caption="¡Una Imagen Tuya Recien Nacida")
+
 st.write(f"""
 ¡Hola {nombre}!
 

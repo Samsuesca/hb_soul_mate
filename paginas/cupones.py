@@ -49,7 +49,6 @@ for cupon, descripcion in cupones.items():
     if st.button(f"Canjear {cupon}"):
         subject = f"Cupón canjeado: {cupon}"
         message = f"Tu hermana ha canjeado el cupón: {cupon}\nDescripción: {descripcion}"
-        if send_email(subject, message):
-            st.success(f"¡El cupón '{cupon}' ha sido canjeado! Te llegará una notificación por correo.")
-        else:
-            st.error(f"No se pudo canjear el cupón '{cupon}'. Intenta nuevamente.")
+        send_email(subject, message)
+        st.success(f"¡El cupón '{cupon}' ha sido canjeado! Te llegará una notificación por correo.")
+     
