@@ -38,6 +38,9 @@ def send_email(subject, message, to_email):
     except smtplib.SMTPException as e:
         st.error(f"Error al enviar el correo: {e}")
         return False
+    except Exception as e:
+        st.error(f"Ocurrió un error inesperado: {e}")
+        return False
 
 st.title("Cupones 🎟️")
 
