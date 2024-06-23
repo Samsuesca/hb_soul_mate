@@ -1,6 +1,7 @@
 import streamlit as st
+from email.message import EmailMessage
+import ssl
 import smtplib
-from email.mime.text import MIMEText
 from dotenv import load_dotenv
 import os
 
@@ -10,28 +11,38 @@ load_dotenv()
 # Configuración del servidor SMTP
 smtp_server = os.getenv("SMTP_SERVER")
 smtp_port = os.getenv("SMTP_PORT")
-smtp_user = os.getenv("SMTP_USER")
+sender_email = os.getenv("SMTP_USER")
 smtp_password = os.getenv("SMTP_PASSWORD")
-to_email = os.getenv("TO_EMAIL")
+receiver_email = os.getenv("TO_EMAIL")
+# = "samuelsuescarios@gmail.com"
+#= "assuescar@eafit.edu.co"
 
-def send_email(subject, message, to_email):
-    msg = MIMEText(message)
-    msg["Subject"] = subject
-    msg["From"] = smtp_user
-    msg["To"] = to_email
+def send_email(subject, message):
+  
 
-    try:
-        server = smtplib.SMTP(smtp_server, smtp_port)
-        server.ehlo()  # Identificar con el servidor
-        server.starttls()  # Iniciar TLS para la seguridad
-        server.ehlo()  # Volver a identificar una vez que TLS esté activo
-        server.login(smtp_user, smtp_password)
-        server.sendmail(smtp_user, to_email, msg.as_string())
-        server.quit()
-        return True
-    except Exception as e:
-        st.error(f"Error al enviar el correo: {e}")
-        return False
+   
+    body = "Este es un correo de prueba enviado desde un script de Python."
+
+    #smtp_server = "smtp.gmail.com"
+    #smtp_port = 587
+    #smtp_username = "samuelsuescarios@gmail.com"
+    smtp_password = "qvnx etyp erwy txmq"
+
+    message = EmailMessage()
+    message["From"] = sender_email
+    message["To"] = receiver_email
+    message["Subject"] = subject
+
+    message.set_content(message)
+
+
+    context = ssl.create_default_context()
+
+
+    with smtplib.SMTP_SSL('smtp.gmail.com',465,context=context) as smtp:
+        smtp.login(sender_email,smtp_password) 
+        smtp.sendmail(sender_email,receiver_email,message.as_string())
+
 
 st.title("Cupones 🎟️")
 
@@ -50,7 +61,7 @@ for cupon, descripcion in cupones.items():
     if st.button(f"Canjear {cupon}"):
         subject = f"Cupón canjeado: {cupon}"
         message = f"Tu hermana ha canjeado el cupón: {cupon}\nDescripción: {descripcion}"
-        if send_email(subject, message, to_email):
+        if send_email(subject, message):
             st.success(f"¡El cupón '{cupon}' ha sido canjeado! Te llegará una notificación por correo.")
         else:
             st.error(f"No se pudo canjear el cupón '{cupon}'. Intenta nuevamente.")
