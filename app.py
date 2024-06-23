@@ -54,6 +54,19 @@ st.markdown(
 # Título de la página
 st.title(f'¡Bienvenida, {nombre}, a tu página de cumpleaños! 🎉')
 
+st.write(f"""
+¡Hola {nombre}!
+
+Este es un regalo especial para ti en tu cumpleaños. He creado esta página web para celebrar tu día de una manera única y especial. Aquí encontrarás diferentes secciones, cada una con una sorpresa diseñada especialmente para ti.
+
+- **Inicio**: Esta es la página de bienvenida donde puedes obtener una visión general de todo lo que te espera.
+- **Soul Mate**: Un rincón especial dedicado a nuestra relación y a todos los momentos increíbles que hemos compartido.
+- **Cupones**: Una serie de cupones que puedes canjear por diferentes actividades y regalos a lo largo del año.
+- **Celia**: Una sección dedicada a la querida Celia.
+
+Espero que disfrutes navegando por estas secciones y que cada una de ellas te haga sentir lo especial que eres para mí. ¡Feliz cumpleaños!
+""")
+
 
 st.write('- ¡Disfruta navegando por tus secciones especiales en esta página de cumpleaños!')
 st.write('- ¡Cada sección tiene una sorpresa para ti!')
