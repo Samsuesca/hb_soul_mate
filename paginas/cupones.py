@@ -9,10 +9,15 @@ load_dotenv()
 
 # Configuración del servidor SMTP
 smtp_server = os.getenv("SMTP_SERVER")
-smtp_port = os.getenv("SMTP_PORT")
+smtp_port = int(os.getenv("SMTP_PORT"))  # Asegurarse de que es un entero
 smtp_user = os.getenv("SMTP_USER")
 smtp_password = os.getenv("SMTP_PASSWORD")
 to_email = os.getenv("TO_EMAIL")
+
+# Verificar si las variables de entorno se cargaron correctamente
+if not all([smtp_server, smtp_port, smtp_user, smtp_password, to_email]):
+    st.error("Error: Algunas variables de entorno no se cargaron correctamente. Verifica el archivo .env.")
+    st.stop()
 
 def send_email(subject, message, to_email):
     msg = MIMEText(message)
@@ -21,6 +26,7 @@ def send_email(subject, message, to_email):
     msg["To"] = to_email
 
     try:
+        # Inicializar el servidor SMTP
         server = smtplib.SMTP(smtp_server, smtp_port)
         server.ehlo()  # Identificar con el servidor
         server.starttls()  # Iniciar TLS para la seguridad
@@ -29,7 +35,7 @@ def send_email(subject, message, to_email):
         server.sendmail(smtp_user, to_email, msg.as_string())
         server.quit()
         return True
-    except Exception as e:
+    except smtplib.SMTPException as e:
         st.error(f"Error al enviar el correo: {e}")
         return False
 
