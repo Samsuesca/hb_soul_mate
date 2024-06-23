@@ -21,10 +21,13 @@ def send_email(subject, message, to_email):
     msg["To"] = to_email
 
     try:
-        with smtplib.SMTP(smtp_server, smtp_port) as server:
-            server.starttls()
-            server.login(smtp_user, smtp_password)
-            server.sendmail(smtp_user, to_email, msg.as_string())
+        server = smtplib.SMTP(smtp_server, smtp_port)
+        server.ehlo()  # Identificar con el servidor
+        server.starttls()  # Iniciar TLS para la seguridad
+        server.ehlo()  # Volver a identificar una vez que TLS esté activo
+        server.login(smtp_user, smtp_password)
+        server.sendmail(smtp_user, to_email, msg.as_string())
+        server.quit()
         return True
     except Exception as e:
         st.error(f"Error al enviar el correo: {e}")
