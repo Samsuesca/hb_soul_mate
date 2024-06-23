@@ -7,10 +7,10 @@ st.set_page_config(page_title='Cumpleaños de la Soul Mate',
 
 pages = [
     Section('Menú de Cumpleaños'),
-    Page("app.py", "🏠 Inicio"),
-    Page("paginas/soul_mate.py", "SOUL MATE", "1️⃣ "),
-    Page("paginas/cupones.py", "CUPONES", "2️⃣ "),
-    Page("paginas/celia.py", "CELIA", "3️⃣ ")
+    Page("app.py", "🎁 Inicio"),
+    Page("paginas/soul_mate.py", "SOUL MATE", "💌"),
+    Page("paginas/cupones.py", "CUPONES", "🎟️ "),
+    Page("paginas/celia.py", "CELIA", "🐱 ")
 ]
 
 # Muestra las páginas en la barra lateral
