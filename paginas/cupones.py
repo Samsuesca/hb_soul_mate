@@ -23,11 +23,14 @@ def send_email(subject, body):
 
     context = ssl.create_default_context()
 
-
-    with smtplib.SMTP_SSL('smtp.gmail.com',465,context=context) as smtp:
-        smtp.login(sender_email,smtp_password) 
-        smtp.sendmail(sender_email,receiver_email,message.as_string())
-
+    try:
+        with smtplib.SMTP_SSL('smtp.gmail.com',465,context=context) as smtp:
+            smtp.login(sender_email,smtp_password) 
+            smtp.sendmail(sender_email,receiver_email,message.as_string())
+        return True
+    except smtplib.SMTPException as e:
+        st.error(f"Error al enviar el correo: {e}")
+        return False
 
 st.title("Cupones 🎟️")
 
