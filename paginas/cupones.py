@@ -2,30 +2,15 @@ import streamlit as st
 from email.message import EmailMessage
 import ssl
 import smtplib
-from dotenv import load_dotenv
-import os
 
-# Cargar variables de entorno desde el archivo .env
-load_dotenv()
-
-# Configuración del servidor SMTP
-smtp_server = os.getenv("SMTP_SERVER")
-smtp_port = os.getenv("SMTP_PORT")
-sender_email = os.getenv("SMTP_USER")
-smtp_password = os.getenv("SMTP_PASSWORD")
-receiver_email = os.getenv("TO_EMAIL")
-# = "samuelsuescarios@gmail.com"
-#= "assuescar@eafit.edu.co"
-
-def send_email(subject, message):
+def send_email(subject, body):
   
 
    
-    body = "Este es un correo de prueba enviado desde un script de Python."
+    sender_email = "samuelsuescarios@gmail.com"
+    receiver_email = "assuescar@eafit.edu.co"
 
-    #smtp_server = "smtp.gmail.com"
-    #smtp_port = 587
-    #smtp_username = "samuelsuescarios@gmail.com"
+
     smtp_password = "qvnx etyp erwy txmq"
 
     message = EmailMessage()
@@ -33,7 +18,7 @@ def send_email(subject, message):
     message["To"] = receiver_email
     message["Subject"] = subject
 
-    message.set_content(message)
+    message.set_content(body)
 
 
     context = ssl.create_default_context()
