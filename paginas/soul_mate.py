@@ -158,13 +158,3 @@ st.write("""
 </div>
 """, unsafe_allow_html=True)
 
-# Botón para generar un mensaje aleatorio de cariño
-col1, col2, col3 = st.columns([1, 6, 1])
-with col2:
-    if st.button("Generar mensaje especial"):
-        mensajes = [
-            "Eres la mejor hermana del mundo 🌍",
-            "Gracias por ser mi compañera en tantos momentos 🤝",
-            "Eres mi inspiración hermanita 💫"
-        ]
-        st.success(random.choice(mensajes))
