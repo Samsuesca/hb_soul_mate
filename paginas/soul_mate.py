@@ -23,8 +23,8 @@ O cuando cantabamos imaginandonos que eramos una banda de rock con pipe y la dab
 Es imposible que recuerde todos esos bellos momentos, pero imaginar mi infancia es bonito porque disfruté al lado de alguien increible como tu.
 """)
 
+st.video("videos/v2.mp4", "Juntos desde chititos")
 # Segunda imagen
-st.image("images/i2.jpeg", caption="Momentos Inolvidables")
 
 st.write("--------")
 
@@ -36,7 +36,9 @@ cogido e invitado a tus proyectos. Definitivamente agradezco tanto por hacerme c
 """)
 
 # Tercera imagen
-st.image("images/i3.jpeg", caption="Aventuras Juntos")
+st.image("images/onu.jpeg", caption="Cuando me ayudaste a crecer, antes de crecer")
+st.image("images/med.jpeg", caption="En el proceso mi fai")
+st.image("images/guapos.jpeg", caption="Ahora si, guapos y poderosos")
 
 st.write("--------")
 
