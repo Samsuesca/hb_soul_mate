@@ -30,7 +30,7 @@ Es imposible que recuerde todos esos bellos momentos, pero imaginar mi infancia 
 """)
 
 center_content(st.video, "videos/v2.mp4")
-st.write("Juntos desde chititos")
+center_content(st.write,"Juntos desde chititos")
 
 st.write("--------")
 
@@ -57,7 +57,7 @@ JAJAJAJAJA, mentiras, por nada del mundo te cambiaría o negaría a un ser tan e
 """)
 
 center_content(st.video, "videos/v3.mp4")
-st.write("Y faltan muchos más momentos juntos por vivir")
+center_content(st.write,"Y faltan muchos más momentos juntos por vivir")
 
 st.write("--------")
 
@@ -70,7 +70,7 @@ Siento que llegarás infinitamente lejos hermanita, tanto como lo siento para m�
 """)
 
 # Imagen de cierre
-center_content(st.image, "images/tuyyohoy.png", caption="Te Amo 💖")
+center_content(st.image, "images/tuyyohoy.jpeg", caption="Te Amo 💖")
 
 st.write("""
 Mi hermana, llegaremos lejos,
