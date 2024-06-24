@@ -9,8 +9,8 @@ Aquí tienes un pequeño espacio dedicado a ti para recordarte lo especial que e
 """)
 
 # Primera imagen y audio
-st.image("images/i1.png", caption="¡Feliz Cumpleaños!")
-st.audio("https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", format='audio/mp3')
+st.image("images/i0.jpeg", caption="¡Feliz Cumpleaños!")
+st.audio("audios/a1.mpeg", format='audio/mp3')
 
 st.write("--------")
 
@@ -24,7 +24,7 @@ Es imposible que recuerde todos esos bellos momentos, pero imaginar mi infancia 
 """)
 
 # Segunda imagen
-st.image("images/i2.png", caption="Momentos Inolvidables")
+st.image("images/i2.jpeg", caption="Momentos Inolvidables")
 
 st.write("--------")
 
@@ -36,7 +36,7 @@ cogido e invitado a tus proyectos. Definitivamente agradezco tanto por hacerme c
 """)
 
 # Tercera imagen
-st.image("images/i3.png", caption="Aventuras Juntos")
+st.image("images/i3.jpeg", caption="Aventuras Juntos")
 
 st.write("--------")
 
@@ -49,7 +49,7 @@ JAJAJJAJAA, mentiras, por nada del mundo te cambiaría o negaría a un ser tan e
 """)
 
 # Cuarta imagen
-st.image("images/i4.png", caption="Amistad y Amor")
+st.image("images/i4.jpeg", caption="Amistad y Amor")
 
 st.write("--------")
 
@@ -62,7 +62,7 @@ Siento que llegarás infinitamente lejos hermanita, tanto como lo siento para mi
 """)
 
 # Imagen de cierre
-st.image("images/i5.png", caption="Te Amo 💖")
+st.image("images/i5.jpeg", caption="Te Amo 💖")
 
 st.write("""
 Mi hermana, llegaremos lejos,
