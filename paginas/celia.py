@@ -31,7 +31,8 @@ Me meo de solo recordarlo
 """)
 
 # Tercera imagen
-st.video("images/laloca.mp4",format="video/mp4", subtitles="Mi hermana, la loca")
+st.write("Mi hermana, la loca")
+st.video("images/laloca.mp4")
 
 st.write("--------")
 
@@ -54,6 +55,7 @@ Recuerdo esta sección de fotos, aunque me llames pendejo se que me amas jajajaj
 """)
 
 # Cuarta imagen
-st.video("images/pandemia.mp4",format="video/mp4", subtitles="Nosotros loleando")
+st.write("Nosotros loleando")
+st.video("images/pandemia.mp4")
 
 
