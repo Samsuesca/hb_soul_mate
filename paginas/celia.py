@@ -77,7 +77,7 @@ No sé si recuerdas esta foto, pero yo sí. Ese día estábamos matriculándonos
 Nuevamente gracias, por dejarme seguir algunos de tus caminos.
 """)
 
-polaroid_effect("images/inem.jpeg", "El comienzo de una gran etapa")
+polaroid_effect("images/inem.png", "El comienzo de una gran etapa")
 
 st.write("--------")
 
@@ -99,7 +99,7 @@ st.write("""
 Finalizaste tu etapa en el INEM, y yo estuve ahí. Igualmente también estuviste por ahí cuando culminé mi proceso. Lo más lindo de eso es que seguimos estudiando en la misma U y vamos a tener el mismo alma mater (HASTA VIMOS UNA MATERIA JUNTOS JAJAJAJAJAJAJA).
 """)
 
-polaroid_effect("images/grados.jpeg", "Juntos Shempre")
+polaroid_effect("images/grados.png", "Juntos Shempre")
 
 st.write("--------")
 
