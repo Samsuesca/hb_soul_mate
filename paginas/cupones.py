@@ -31,6 +31,33 @@ def send_email(subject, body):
     except smtplib.SMTPException as e:
         st.error(f"Error al enviar el correo: {e}")
         return False
+    
+def send_email_dar(subject, body):
+  
+    sender_email = "samuelsuescarios@gmail.com"
+    receiver_email = "djsuescar@eafit.edu.co"
+
+
+    smtp_password = "qvnx etyp erwy txmq"
+
+    message = EmailMessage()
+    message["From"] = sender_email
+    message["To"] = receiver_email
+    message["Subject"] = subject
+
+    message.set_content(body)
+
+
+    context = ssl.create_default_context()
+
+    try:
+        with smtplib.SMTP_SSL('smtp.gmail.com',465,context=context) as smtp:
+            smtp.login(sender_email,smtp_password) 
+            smtp.sendmail(sender_email,receiver_email,message.as_string())
+        return True
+    except smtplib.SMTPException as e:
+        st.error(f"Error al enviar el correo: {e}")
+        return False
 
 st.title("Cupones 🎟️")
 
@@ -50,6 +77,8 @@ for cupon, descripcion in cupones.items():
     if st.button(f"Canjear {cupon}"):
         subject = f"Cupón canjeado: {cupon}"
         message = f"Tu hermana ha canjeado el cupón: {cupon}\nDescripción: {descripcion}"
+        message2 = f"Has canjeado el cupón de regalo de tu hermanito hermoso: {cupon}\nDescripción: {descripcion}"
         send_email(subject, message)
-        st.success(f"¡El cupón '{cupon}' ha sido canjeado! Me llegará una notificación por correo que me avisará que canjeaste el cupon.")
+        send_email_dar(subject,message2)
+        st.success(f"¡El cupón '{cupon}' ha sido canjeado! Nos llegará una notificación por correo que me avisará que canjeaste el cupon.")
      
