@@ -62,10 +62,6 @@ def send_email_dar(subject, body):
         st.error(f"Error al enviar el correo: {e}")
         return False
 
-
-# Configuración de la página
-st.set_page_config(page_title="Cupones de Cumpleaños", page_icon="🎟️", layout="wide")
-
 # Título con animación
 st.markdown("""
     <h1 class="animate-title" style='text-align: center; font-size: 3em;'>
