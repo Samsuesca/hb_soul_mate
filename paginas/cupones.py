@@ -138,30 +138,6 @@ for i, (cupon, descripcion) in enumerate(cupones.items()):
 
 # Cupón sorpresa
 st.markdown("---")
-st.subheader("🎭 Cupón Sorpresa")
-if st.button("Revelar Cupón Sorpresa"):
-    cupones_sorpresa = [
-        "Un día de spa juntos",
-        "Cocinarte tu plato favorito",
-        "Un día de aventura sorpresa",
-        "Un concierto de tu artista favorito (si está en la ciudad)",
-        "Un día de compras, yo pago"
-    ]
-    cupon_sorpresa = random.choice(cupones_sorpresa)
-    st.markdown(f"""
-        <div style="
-            background: linear-gradient(45deg, #A9C9FF 0%, #FFBBEC 100%);
-            border-radius: 15px;
-            padding: 20px;
-            margin: 10px 0;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            text-align: center;
-            color: #fff;
-        ">
-            <h3>🎉 ¡Sorpresa!</h3>
-            <p>{cupon_sorpresa}</p>
-        </div>
-    """, unsafe_allow_html=True)
 
 # Nota final
 st.markdown("""
