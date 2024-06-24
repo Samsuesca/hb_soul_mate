@@ -24,7 +24,7 @@ Es imposible que recuerde todos esos bellos momentos, pero imaginar mi infancia 
 """)
 
 
-st.video("videos/v2.mp4")
+st.video("videos/v2.mp4",format="video/mp4")
 
 st.write("Juntos desde chititos")
 # Segunda imagen

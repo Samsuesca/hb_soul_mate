@@ -18,7 +18,7 @@ No sé si recuerdes esta foto, pero yo si. Ese dia estabamos matriculandonos en 
 Nuevamente gracias, por dejarme seguir algunos de tus caminos
 """)
 
-st.images("images/inem.jpeg", caption= "El comienzo de una gran etapa")
+st.image("images/inem.jpeg", caption= "El comienzo de una gran etapa")
 # Segunda imagen
 
 st.write("--------")

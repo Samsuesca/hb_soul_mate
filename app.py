@@ -55,7 +55,7 @@ st.markdown(
 st.title(f'¡Bienvenida, {nombre}, a tu página de cumpleaños! 🎉')
 
 st.write("Dar, cuando pequeña.")
-st.video("videos/v1.mp4")
+st.video("videos/v1.mp4",start_time=7)
 
 st.write(f"""
 ¡Hola {nombre}!
