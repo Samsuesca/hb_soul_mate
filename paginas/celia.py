@@ -1,9 +1,6 @@
 import streamlit as st
 import random
 
-# Configuración de la página
-st.set_page_config(page_title="📸 Memories 📸", page_icon="📸", layout="wide")
-
 # Función para centrar el contenido
 def center_content(content_func, *args, **kwargs):
     col1, col2, col3 = st.columns([1, 6, 1])
