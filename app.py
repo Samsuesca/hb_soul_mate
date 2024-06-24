@@ -6,7 +6,6 @@ st.set_page_config(page_title='Cumpleaños de la Soul Mate',
                    layout='wide')
 
 pages = [
-    Section('Menú de Cumpleaños'),
     Page("app.py", "🎁 Inicio"),
     Page("paginas/soul_mate.py", "SOUL MATE", "💌"),
     Page("paginas/cupones.py", "CUPONES", "🎟️ "),
@@ -52,7 +51,7 @@ st.markdown(
 )
 
 # Título de la página
-st.title(f'¡Bienvenida, {nombre}, a tu página de cumpleaños! 🎉')
+st.title(f'¡Bienvenida, {nombre}, a tu página web de cumpleaños! 🎉')
 
 st.write("Dar, cuando pequeña.")
 st.video("videos/v1.mp4",start_time=7)
