@@ -10,24 +10,7 @@ def center_content(content_func, *args, **kwargs):
     with col2:
         content_func(*args, **kwargs)
 
-# Función para crear un efecto de polaroid
-def polaroid_effect(image_path, caption):
-    st.markdown(f"""
-        <div style="
-            background: white;
-            padding: 10px;
-            padding-bottom: 20px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            width: 80%;
-            margin: auto;
-            transform: rotate({random.uniform(-5, 5)}deg);
-        ">
-            <img src="{image_path}" style="width: 100%;">
-            <div style="text-align: center; padding: 10px 0;">
-                <p style="font-family: 'Brush Script MT', cursive; font-size: 1.2em;">{caption}</p>
-            </div>
-        </div>
-    """, unsafe_allow_html=True)
+
 
 # Título con animación
 st.markdown("""
@@ -77,7 +60,7 @@ No sé si recuerdas esta foto, pero yo sí. Ese día estábamos matriculándonos
 Nuevamente gracias, por dejarme seguir algunos de tus caminos.
 """)
 
-polaroid_effect("images/inem.png", "El comienzo de una gran etapa")
+center_content(st.image,"images/inem.png", caption="El comienzo de una gran etapa")
 
 st.write("--------")
 
@@ -99,7 +82,7 @@ st.write("""
 Finalizaste tu etapa en el INEM, y yo estuve ahí. Igualmente también estuviste por ahí cuando culminé mi proceso. Lo más lindo de eso es que seguimos estudiando en la misma U y vamos a tener el mismo alma mater (HASTA VIMOS UNA MATERIA JUNTOS JAJAJAJAJAJAJA).
 """)
 
-polaroid_effect("images/grados.png", "Juntos Shempre")
+center_content(st.image,"images/grados.png", caption="Juntos Shempre")
 
 st.write("--------")
 
