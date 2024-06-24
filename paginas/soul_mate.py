@@ -68,7 +68,7 @@ Siento que llegarás infinitamente lejos hermanita, tanto como lo siento para mi
 """)
 
 # Imagen de cierre
-st.image("images/tuyyohoy.png", caption="Te Amo 💖")
+st.image("images/tuyyohoy.png", caption="Te Amo Soul Mate")
 
 st.write("""
 Mi hermana, llegaremos lejos,
