@@ -62,7 +62,7 @@ st.write(f"""
 Este es un regalo especial para ti en tu cumpleaños que hizo tu hermano nerd al no encontrar otra idea. He creado esta página web para celebrar tu día de una manera única y especial, dandole un toque mio jjeejeje. Aquí encontrarás diferentes secciones, cada una con una sorpresa diseñada especialmente para ti. Brevemente te describo cada una de ellas:
 
 - **[Inicio](#)**: Esta es la presente sección, es la página de bienvenida donde puedes obtener una visión general de todo lo que te espera.
-- **[Soul Mate](https://happybirthdaytomysoulmate.streamlit.app/SOUL_MATE)**: Un rincón especial dedicado a nuestra hermandad y a los momentos increíbles que hemos compartido.
+- **[Soul Mate](https://happybirthdaytomysoulmate.streamlit.app/SOUL%20MATE)**: Un rincón especial dedicado a nuestra hermandad y a los momentos increíbles que hemos compartido.
 - **[Cupones](https://happybirthdaytomysoulmate.streamlit.app/CUPONES)**: Una serie de cupones que puedes canjear por diferentes actividades y regalos a lo largo del año.
 - **[Memories](https://happybirthdaytomysoulmate.streamlit.app/MEMORIES)**: Una sección dedicada a algunos recuerdos que encontré bien refundidos y quisiera que quedaran en constancia.
 
