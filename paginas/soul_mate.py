@@ -1,6 +1,6 @@
 import streamlit as st
 import random
-
+## se debe actualizar ahora
 # Función para centrar el contenido
 def center_content(content_func, *args, **kwargs):
     col1, col2, col3 = st.columns([1, 6, 1])
@@ -162,9 +162,7 @@ st.write("""
 if st.button("Generar mensaje especial"):
     mensajes = [
         "Eres la mejor hermana del mundo 🌍",
-        "Contigo, cada día es una aventura 🚀",
-        "Tu sonrisa ilumina mi vida ☀️",
-        "Gracias por ser mi cómplice en todo 🤝",
-        "Eres mi inspiración diaria 💫"
+        "Gracias por ser mi compañera en tantos momentos 🤝",
+        "Eres mi inspiración hermanita 💫"
     ]
     st.success(random.choice(mensajes))
