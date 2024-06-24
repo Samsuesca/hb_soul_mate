@@ -9,7 +9,7 @@ Aquí tienes un pequeño espacio dedicado a ti para recordarte lo especial que e
 """)
 
 # Primera imagen y audio
-st.image("images/i0.jpeg", caption="¡Feliz Cumpleaños!")
+st.image("images/i0.png", caption="¡Feliz Cumpleaños!")
 st.audio("audios/a1.mpeg", format='audio/mp3')
 
 st.write("--------")
