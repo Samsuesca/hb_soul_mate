@@ -38,7 +38,7 @@ st.write("--------")
 st.write("""
 ### My guide.
 Muchas veces fuiste mi guía. A veces reflexiono y concluyo que lo más probable es que hubiera sido un raro que nunca explotó sus habilidades sociales si no me hubieras
-cogido e invitado a tus proyectos. Definitivamente agradezco tanto por hacerme crecer y seguir algunos de tus caminos. En muchos aspectos soy quien soy, gracias a ti.
+cogido e invitado a tus proyectos. Definitivamente te agradezco tanto por hacerme crecer y seguir algunos de tus caminos. En muchos aspectos soy quien soy, gracias a ti.
 """)
 
 # Imágenes intercaladas
@@ -53,7 +53,7 @@ st.write("""
 ### Mi compañía.
 Dar, definitivamente te agradezco por ser mi compañera de muchos momentos y la hermanita que siempre estuvo ahí para mí. Me encanta tener una hermanita que brille como yo, o que incluso brille mucho más.
 En realidad, nos vemos geniales como hermanos y fuera de charla, aunque fuiste recogida en un basurero, agradezco el día en que la cucha le dio por hacer semejante acto de caridad.
-JAJAJAJAJA, mentiras, por nada del mundo te cambiaría o negaría a un ser tan espectacular como tú.
+JAJAJAJAJA, mentiras, por nada del mundo te cambiaría o negaría a un ser tan espectacular como tú. Antes doy gracias porque siempre estás ahi dandome un poco de tu amor y de tu caracter para la vida. 
 """)
 
 center_content(st.video, "videos/v3.mp4")
@@ -74,5 +74,6 @@ center_content(st.image, "images/tuyyohoy.jpeg", caption="Te Amo 💖")
 
 st.write("""
 Mi hermana, llegaremos lejos,
-Eres alguien demasiado radiante y una estrella que en sus fases de vida cada vez brilla más.
+Eres alguien demasiado radiante y una estrella que en sus fases de vida cada vez brilla más. Gracias hermanita por regalarme un poco de tu brillo, por ser mi soul mate, mi consejera y confidente.
+Espero cumplas mil años más y el universo siga disfrutando de ti.
 """)
