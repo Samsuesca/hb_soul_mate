@@ -4,7 +4,7 @@ st.title("Soul Mate 💖")
 
 # Introducción
 st.write("""
-¡Feliz cumpleaños a mi querida Soul Mate!
+¡Feliz cumpleaños, my Soul Mate!
 Aquí tienes un pequeño espacio dedicado a ti para recordarte lo especial que eres.
 """)
 
@@ -16,9 +16,11 @@ st.write("--------")
 
 # Texto intercalado
 st.write("""
-### Primer Momento Especial
-Recuerdo aquel día cuando nos conocimos por primera vez. Fue un momento mágico que nunca olvidaré. 
-Tu sonrisa ilumina cualquier lugar y estoy agradecido por cada momento que hemos compartido juntos.
+### Por se quién creció conmigo y me acompaño en tantos momentos.
+Hermanita, siempre recordaré tu compañia desde el dia cero. Vivimos momentos mágicos que nunca olvidaré y que hoy recuerdo de la manera más bella posible.
+Desde las veces en las que jugabamos a que eramos adultos, que teniamos trabajos y que nos invitabamos a nuestros apartamentos (pd: me encanta que la vida nos haya permitido que ya me invites al tuyo jejejee).
+O cuando cantabamos imaginandonos que eramos una banda de rock con pipe y la dabamos toda definitivamente. 
+Es imposible que recuerde todos esos bellos momentos, pero imaginar mi infancia es bonito porque disfruté al lado de alguien increible como tu.
 """)
 
 # Segunda imagen
@@ -28,9 +30,9 @@ st.write("--------")
 
 # Texto intercalado
 st.write("""
-### Segundo Momento Especial
-Las aventuras que hemos tenido, desde viajes espontáneos hasta las noches tranquilas en casa, 
-han sido algunas de las mejores experiencias de mi vida. ¡Eres mi compañera en todo!
+### My guide.
+Muchas veces fuiste mi guia. A veces reflexiono y concluyo que lo más probable es que fuera autista o un raro que nunca explotó sus habilidades sociales si no me hubieras
+cogido e invitado a tus proyectos. Definitivamente agradezco tanto por hacerme crecer y seguir algunos de tus caminos. En muchos aspectos soy quién soy, gracias a ti.
 """)
 
 # Tercera imagen
@@ -40,9 +42,10 @@ st.write("--------")
 
 # Texto intercalado
 st.write("""
-### Tercer Momento Especial
-No solo eres mi pareja, sino también mi mejor amiga. Tu apoyo incondicional y amor me han dado la fuerza para ser la mejor versión de mí mismo.
-Gracias por estar siempre a mi lado.
+### Mi compañia.
+Dar, definitivamente te agradezco por ser mi compañera de muchos momentos y la hermanita que siempre estuvo ahí para mi. Me encanta tener una hermanita que brille como yo, o que incluso brille mucho más.
+En realidad, nos vemos geniales como hermanos y fuera de charla, aunque fuiste recogida en un basurero, agradezco el dia en que la cucha le dio por hacer semejante acto de caridad.
+JAJAJJAJAA, mentiras, por nada del mundo te cambiaría o negaría a un ser tan espectacular como tu.
 """)
 
 # Cuarta imagen
@@ -52,9 +55,17 @@ st.write("--------")
 
 # Texto de cierre
 st.write("""
-Cada día a tu lado es un regalo. Espero que este cumpleaños esté lleno de tanta alegría y amor como tú me has dado. 
-¡Te amo con todo mi corazón, y estoy deseando pasar muchos más cumpleaños juntos!
+My soul mate.
+Herma, tu misma lo haz dicho, tu y yo tenemos una conexión especial. Tal vez sea algo como el ying y el yang o cualquiera de esas mondades, le podemos poner el mistisismo que sea, pero la realidad es esa.
+Nosotros, dentro de nuestro entorno, nuestra familia, y dentro de este extraño universo tenemos una relación especial y que destaca, somos seres radiantes individualmente y juntos. De alguna manera siento que estamos grandes para muy, pero muy grandes cosas, tanto individualmente como juntos.
+Siento que llegarás infinitamente lejos hermanita, tanto como lo siento para mi. 
 """)
 
 # Imagen de cierre
 st.image("images/i5.png", caption="Te Amo 💖")
+
+st.write("""
+Mi hermana, llegaremos lejos,
+Eres alguien demasiado radiante y una estrella que en sus fases de vida cada vez brilla más. """)
+
+

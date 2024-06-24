@@ -34,7 +34,8 @@ def send_email(subject, body):
 
 st.title("Cupones 🎟️")
 
-st.write("🎁 ¡Aquí tienes algunos cupones especiales que puedes canjear!")
+st.write("🎁 ¡Aquí tienes algunos cupones especiales que puedes canjear en cualquier momento del año!")
+st.write("Ojo, te recomiendo no tocar el botón si no quieres canjear tu cupon")
 
 cupones = {
     "Llego tu mouskiherramienta misteriosa": "Tienes la oportunidad de esclavisarme con algo que necesites de tu eleccion, sin pero ni costo alguno",
@@ -50,5 +51,5 @@ for cupon, descripcion in cupones.items():
         subject = f"Cupón canjeado: {cupon}"
         message = f"Tu hermana ha canjeado el cupón: {cupon}\nDescripción: {descripcion}"
         send_email(subject, message)
-        st.success(f"¡El cupón '{cupon}' ha sido canjeado! Te llegará una notificación por correo.")
+        st.success(f"¡El cupón '{cupon}' ha sido canjeado! Me llegará una notificación por correo que me avisará que canjeaste el cupon.")
      
