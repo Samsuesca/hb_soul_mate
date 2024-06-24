@@ -10,7 +10,7 @@ pages = [
     Page("app.py", "🎁 Inicio"),
     Page("paginas/soul_mate.py", "SOUL MATE", "💌"),
     Page("paginas/cupones.py", "CUPONES", "🎟️ "),
-    Page("paginas/celia.py", "CELIA", "🐱 ")
+    Page("paginas/celia.py", "MEMORIES", "📸 ")
 ]
 
 # Muestra las páginas en la barra lateral
@@ -64,7 +64,7 @@ Este es un regalo especial para ti en tu cumpleaños que hizo tu hermano nerd a 
 - **Inicio**: Esta es la presente sección, es la página de bienvenida donde puedes obtener una visión general de todo lo que te espera.
 - **Soul Mate**: Un rincón especial dedicado a nuestra hermandad y a los momentos increíbles que hemos compartido.
 - **Cupones**: Una serie de cupones que puedes canjear por diferentes actividades y regalos a lo largo del año.
-- **Celia**: Una sección dedicada a la querida Celia, tu gata que brilla como tu.
+- **Memories**: Una sección dedicada a algunos recuerdos que encontré bien refundidos y quisiera que quedaran en constancia.
 
 Espero que disfrutes navegando por estas secciones y que cada una de ellas te haga sentir lo especial que eres para mí. ¡Feliz cumpleaños!
 """)

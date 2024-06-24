@@ -23,7 +23,7 @@ O cuando cantabamos imaginandonos que eramos una banda de rock con pipe y la dab
 Es imposible que recuerde todos esos bellos momentos, pero imaginar mi infancia es bonito porque disfruté al lado de alguien increible como tu.
 """)
 
-st.video("videos/v2.mp4", "Juntos desde chititos")
+st.video("videos/v2.mp4", caption= "Juntos desde chititos")
 # Segunda imagen
 
 st.write("--------")
@@ -51,7 +51,7 @@ JAJAJJAJAA, mentiras, por nada del mundo te cambiaría o negaría a un ser tan e
 """)
 
 # Cuarta imagen
-st.image("images/i4.jpeg", caption="Amistad y Amor")
+st.video("videos/v3.mp4", caption="Y faltan muchos más momentos juntos por vivir")
 
 st.write("--------")
 
@@ -64,7 +64,7 @@ Siento que llegarás infinitamente lejos hermanita, tanto como lo siento para mi
 """)
 
 # Imagen de cierre
-st.image("images/i5.jpeg", caption="Te Amo 💖")
+st.image("images/tuyyohoy.pneg", caption="Te Amo 💖")
 
 st.write("""
 Mi hermana, llegaremos lejos,
