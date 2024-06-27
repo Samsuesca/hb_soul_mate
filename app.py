@@ -94,7 +94,7 @@ st.markdown(
         color: #fff;
         background-clip: text;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: black;
         animation: textclip 2s linear infinite;
     }}
     @keyframes textclip {{
